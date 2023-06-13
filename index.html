@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
+  <!-- make more responsive design -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Zornitsa Yahiya - Junior Developer"/>
   <link rel="stylesheet" href="styles.css"/>
@@ -16,7 +17,7 @@
       <ul class="nobull">
         <li><a href="#experience">WORK EXPERIENCE</a></li>
         <li><a href="#education">EDUCATION</a></li>
-        <li><a href="#interests">INTERESTS</a></li>
+        <li><a href="#photo-galllery">INTERESTING</a></li>
         <li><a href="#contact-form">CONTACT ME</a></li>
       </ul>
       </nav>
@@ -37,16 +38,15 @@
       <div id="facts">
         <ul>
           <li>Experienced Account Manager with a proven record in expanding markets through research and tenacity.</li>
-          <li>Proficient in Python and C programming languages.</li>
-          <li>Skilled in Salesforce administration and CRM tools such as Microsoft Dynamics, SAP, and Hendrix.</li>
+          <li>Knowledge of the fundamentals in Python and C programming languages.</li>
+          <li>Certified in Salesforce administration</li>
           <li>Familiar with collaboration tools like Jira, Confluence, Bitbucket, GitHub, and Git.</li>
-          <li>Google Analytics certified with knowledge of marketing fundamentals.</li>
-          <li>Master's degree in Politics and Society with expertise in qualitative and quantitative research.</li>
+          <li>Experience in qualitative and quantitative research.</li>
           <li>Fluent in German and English, with native proficiency in Bulgarian and conversational skills in Russian.</li>
         </ul>
       </div>
     </section>
-    <section id="experience" aria-labelledby="experience">
+    <section id="experience">
         <h3>EXPERIENCE</h3>
         <ul id="work-experience" class="nobull">
             <li>
@@ -68,7 +68,7 @@
         </ul>
     </section>
 
-    <section id="education" aria-labelledby="education">
+    <section id="education">
     <h3>EDUCATION</h3>
     <ul class="nobull">
         <li>
@@ -99,37 +99,51 @@
     </section>
     <!-- //TODO:remove volunteering? -->
     <section id="volunteering"></section>
-    <section id="interests"></section>
-    <section id="contact-form"></section>
     <section id="gallery">
-      <section id="photo-gallery">
-          <h3>A piece of Me</h3>
-          <div id="kukeri-text">
-          <p>I wanted to include a section that highlights my heritage, so I chose to delve into the captivating Bulgarian tradition of Kukeri.
+        <h3>Interesting fact about my country of origin...</h3>
+        <div id="kukeri-text" class="generic-text">
+          <!-- I wanted to include a section that highlights my heritage, so I chose to delve into the captivating Bulgarian tradition of Kukeri. -->
+        <p>Kukeri is a mesmerizing spectacle that unfolds every winter. Men adorned in elaborate and often terrifying costumes take to the streets, unleashing a symphony of loud noises and engaging in lively dances. The costumes themselves are adorned with vibrant ribbons, bells, and other decorative elements, creating a visual feast for all who witness it. These individuals, known as Kukeri, are the bearers of an ancient pagan tradition, striving to protect their community by warding off evil spirits and ushering in good fortune and fertility.
+          
+          The masks worn by the Kukeri hold a significant role in this tradition. Crafted from animal fur, they boast intricate designs featuring horns, fangs, and exaggerated facial expressions. These masks symbolize a wide array of mythical creatures and deities, their formidable appearance intended to strike fear into malevolent forces.
+          
+          During the kukeri procession, an enchanting cacophony ensues. The participants stomp their feet, jingle their bells, and wield wooden sticks or whips, creating a rhythmic symphony of sound. Their movements, carefully choreographed, give life to lively dances that symbolize the reawakening of nature and the cycle of life itself. This dynamic display, with its energetic rhythms and resounding echoes, is believed to chase away the grip of winter and pave the way for the vibrant arrival of spring.</p>
+        </div>
+          <div class="gallery" id="photo-galllery">
+          <img src="C:\Users\zyahi\Pictures\IMG_2234.jpg" alt="stylised cover">
+          <img src="https://i0.wp.com/kakda.org/wp-content/uploads/2023/01/16.jpg" alt="horned kukeri">
+          <img src="https://i0.wp.com/kakda.org/wp-content/uploads/2023/01/8.jpg" alt="white kukeri">
+          <img src="https://i0.wp.com/kakda.org/wp-content/uploads/2023/01/17.jpg" alt="red close up">
+          <img src="https://i0.wp.com/kakda.org/wp-content/uploads/2023/01/1.jpg" alt="dancing kukeri">
+          <img src="https://i0.wp.com/kakda.org/wp-content/uploads/2023/01/19.jpg" alt="tall kukeri">
+          <img src="https://i0.wp.com/kakda.org/wp-content/uploads/2023/01/6.jpg" alt="vested kukeri">
+          <img src="C:\Users\zyahi\Pictures\kukeri-v-blagoevgrad2.jpg" alt="hairy kukeri">
+          <img src="https://i0.wp.com/kakda.org/wp-content/uploads/2023/01/11.jpg" alt="surva 2017">
+        </div>
+  
+        </section>
+<!-- rethink the position -->
+    <section id="contact-form">
+      <form method="post" action="https://register-demo.freecodecamp.org">
+        <fieldset>
+          <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required /></label>
+          <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+          <label for="email">Email: <input id="email" name="email" type="email" required /></label>   
+        </fieldset>
+        
+        <fieldset>
+          <label for="message">Please write a message:
+            <textarea id="message" name="message" rows="3" cols="30"></textarea>
+          </label>
+        </fieldset>
 
-            Kukeri is a mesmerizing spectacle that unfolds every winter. Men adorned in elaborate and often terrifying costumes take to the streets, unleashing a symphony of loud noises and engaging in lively dances. The costumes themselves are adorned with vibrant ribbons, bells, and other decorative elements, creating a visual feast for all who witness it. These individuals, known as Kukeri, are the bearers of an ancient pagan tradition, striving to protect their community by warding off evil spirits and ushering in good fortune and fertility.
-            
-            The masks worn by the Kukeri hold a significant role in this tradition. Crafted from animal fur, they boast intricate designs featuring horns, fangs, and exaggerated facial expressions. These masks symbolize a wide array of mythical creatures and deities, their formidable appearance intended to strike fear into malevolent forces.
-            
-            During the kukeri procession, an enchanting cacophony ensues. The participants stomp their feet, jingle their bells, and wield wooden sticks or whips, creating a rhythmic symphony of sound. Their movements, carefully choreographed, give life to lively dances that symbolize the reawakening of nature and the cycle of life itself. This dynamic display, with its energetic rhythms and resounding echoes, is believed to chase away the grip of winter and pave the way for the vibrant arrival of spring.</p>
-          </div>
-            <div class="gallery">
-            <img src="C:\Users\zyahi\Pictures\IMG_2234.jpg" alt="stylised cover">
-            <img src="https://i0.wp.com/kakda.org/wp-content/uploads/2023/01/16.jpg" alt="horned kukeri">
-            <img src="https://i0.wp.com/kakda.org/wp-content/uploads/2023/01/8.jpg" alt="white kukeri">
-            <img src="https://i0.wp.com/kakda.org/wp-content/uploads/2023/01/17.jpg" alt="red close up">
-            <img src="https://i0.wp.com/kakda.org/wp-content/uploads/2023/01/1.jpg" alt="dancing kukeri">
-            <img src="https://i0.wp.com/kakda.org/wp-content/uploads/2023/01/19.jpg" alt="tall kukeri">
-            <img src="https://i0.wp.com/kakda.org/wp-content/uploads/2023/01/6.jpg" alt="vested kukeri">
-            <img src="C:\Users\zyahi\Pictures\kukeri-v-blagoevgrad2.jpg" alt="hairy kukeri">
-            <img src="https://i0.wp.com/kakda.org/wp-content/uploads/2023/01/11.jpg" alt="surva 2017">
-          </div>
-    </section>
-    <ul class="nobull">
-      <li>View <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/zyahiya">LinkedIn</a> Profile</li>
-      <li>View<a id="github" target="_blank" href="https://github.com/Suzie-to"> Github</a> Profile</li>
-      <li>View <a id="trailhead" target="_blank" href="https://trailblazer.me/id/zyahiya">Trailhead</a> Profile</li>
-    </ul>
+        <input type="submit" value="Send" />
+      </form>
+      <ul class="nobull" id="links">
+        <li><a id="linkedin" target="_blank" href="https://www.linkedin.com/in/zyahiya">LinkedIn</a></li>
+        <li><a id="github" target="_blank" href="https://github.com/Suzie-to"> Github</a></li>
+        <li><a id="trailhead" target="_blank" href="https://trailblazer.me/id/zyahiya">Trailhead</a></li>
+      </ul>
     </section>
   </main>
 </body>

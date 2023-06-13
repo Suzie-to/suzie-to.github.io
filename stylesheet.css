@@ -63,9 +63,20 @@ a {
   justify-content: space-around;
   font-size: 16px;
 }
-nav li a:hover {
+/* nav li a:hover {
   color:darkgrey;
+} */
+a:hover {
+color:darkgrey;
 }
+#links {
+  display:flex;
+  justify-content: space-around;
+}
+/* ul[id="links"]:hover {
+color:blanchedalmond;
+}  */
+
 .page-wrapper {
 width: 100%;
 max-width: 1024px;
@@ -122,3 +133,32 @@ body {
   padding:40px 40px;
   justify-content: center;
 }
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom:2em;
+}
+
+input[type="submit"] {
+  display: block;
+  min-width:300px;
+  width: 30%;
+  margin: 1em auto 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: burlywood;
+  border-color: white;
+}
+input, textarea {
+  background-color:whitesmoke;
+  border: 1px solid burlywood;
+  color:whitesmoke;
+  margin:10px 0 0 0;
+  width:100%;
+  min-height:2em;
+}
+/* div p {
+padding: 20px 10px;
+} */
