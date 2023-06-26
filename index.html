@@ -15,10 +15,12 @@
     <div class="page-wrapper">
     <nav>
       <ul class="nobull">
+        <li><a href="#about-me">WHO AM I</a></li>
+        <li><a href="#why">WHY CODE</a></li>
         <li><a href="#experience">WORK EXPERIENCE</a></li>
         <li><a href="#education">EDUCATION</a></li>
-        <li><a href="#photo-galllery">INTERESTING</a></li>
-        <li><a href="#contact-form">CONTACT ME</a></li>
+        <li><a href="#photo-galllery">MY JOURNEY AT FAC</a></li>
+        <li><a href="#contact-form">GET IN TOUCH</a></li>
       </ul>
       </nav>
     </div>
@@ -33,6 +35,7 @@
         alt="Zornitsa posing for a CV"/>
       <figcaption id="img-caption">An aspiring Developer</figcaption>
     </figure>
+
     <section id="overview">
       <p id="tribute-info">Passionate Junior Developer with a diverse background and a thirst for knowledge.</p>
       <div id="facts">
@@ -46,19 +49,19 @@
         </ul>
       </div>
     </section>
-    <section>
+    <section id="why">
       <div class="toggle-container">
         <button class="toggle-button" onclick="myToggle()"><h3>Why am I drawn to a career as a web developer?</h3></button>
         <div id = "myToggle" class="toggle-content">
-          <p>Well, it's like embarking on an adventure where I can unleash my creativity and problem-solving skills. Building visually appealing websites while solving design challenges sounds like an exciting puzzle to me. Plus, the web development industry offers endless opportunities for personal growth and staying ahead of the curve. So, tell me, what's not to be enthusiastic about when it comes to diving into a career as a web developer?"</p>
+          <p class="center">Well, it's like embarking on an adventure where I can unleash my creativity and problem-solving skills. Building visually appealing websites while solving design challenges sounds like an exciting puzzle to me. Plus, the web development industry offers endless opportunities for personal growth and staying ahead of the curve. So, tell me, what's not to be enthusiastic about when it comes to diving into a career as a web developer?"</p>
         </div>
       </div>
       </section>
-      <section>
+      <section id="about-me">
         <div class="toggle-container">
           <button class="toggle-button" onclick="myToggle()"><h3>Who am I?</h3></button>
           <div id = "myToggle1" class="toggle-content">
-            <p>Beyond the world of coding lies an adventurous soul within me that craves exploration and discovery. Picture me hiking through breathtaking landscapes, snorkeling in crystal-clear waters, and cycling through uncharted territories. Whether I'm navigating the intricacies of public transport in Tanzania, diving into the depths of Egypt, or conquering treacherous mountain roads in the Balkans, I thrive on the exhilaration that accompanies new experiences.
+            <p class ="center">Beyond the world of coding lies an adventurous soul within me that craves exploration and discovery. Picture me hiking through breathtaking landscapes, snorkeling in crystal-clear waters, and cycling through uncharted territories. Whether I'm navigating the intricacies of public transport in Tanzania, diving into the depths of Egypt, or conquering treacherous mountain roads in the Balkans, I thrive on the exhilaration that accompanies new experiences.
 
               But my appetite for adventure extends beyond thrill-seeking pursuits. I'm also a passionate learner of history and culture, constantly seeking to broaden my perspective and fuel my personal growth. Fluent in multiple languages and molded by the vibrant cultures of the Netherlands, Germany, and Bulgaria, I possess an innate adaptability that allows me to feel at home wherever I roam.
               
@@ -150,7 +153,7 @@
 <!-- rethink the position -->
     <section id="contact-form">
       <form method="post" action="mailto:yahiya.zyahiya@gmail.com">
-        <h2>Contact Form</h2>
+        <h2>Ready to connect?</h2>
         <fieldset>
           <label for="first-name">First Name: <input id="first-name" name="first-name" type="text" required /></label>
           <label for="last-name">Last Name: <input id="last-name" name="last-name" type="text" required /></label>
@@ -166,8 +169,25 @@
         <input type="submit" value="Send" />
       </form>
       <ul class="nobull" id="links">
-        <li><a id="linkedin" target="_blank" href="https://www.linkedin.com/in/zyahiya">LinkedIn</a></li>
-        <li><a id="github" target="_blank" href="https://github.com/Suzie-to"> Github</a></li>
+        <!-- <li><a id="linkedin" target="_blank" href="https://www.linkedin.com/in/zyahiya">LinkedIn</a></li> -->
+        <li>
+          <a id="linkedin" target="_blank" href="https://www.linkedin.com/in/zyahiya">
+            LinkedIn
+            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="#0077B5">
+              <path d="M19.25 3H4.75A1.75 1.75 0 0 0 3 4.75v14.5A1.75 1.75 0 0 0 4.75 21h14.5A1.75 1.75 0 0 0 21 19.25V4.75A1.75 1.75 0 0 0 19.25 3zM8.71 18H6.35V9.35H8.7V18zm-1.68-9.77a1.84 1.84 0 1 1-3.68-.01 1.84 1.84 0 0 1 3.68.01zm12.68 9.77h-2.36v-3.97c0-1.42-.51-2.4-1.79-2.4-1 0-1.6.68-1.86 1.34-.1.25-.12.58-.12.92v4.11H9.46s.03-6.4 0-7.05h2.36v1c.32-.48.9-1.16 2.18-1.16 1.59 0 2.79 1.04 2.79 3.28v3.93z"></path>
+            </svg>
+          </a>
+        </li>
+        
+        <li>
+          <a id="github" target="_blank" href="https://github.com/Suzie-to">
+            Github
+            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+        </li>
+        
         <li><a id="trailhead" target="_blank" href="https://trailblazer.me/id/zyahiya">Trailhead</a></li>
       </ul>
     </section>

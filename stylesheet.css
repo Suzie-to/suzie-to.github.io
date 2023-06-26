@@ -205,3 +205,31 @@ figure {
   border-radius: 5px;
   margin-top: 10px;
 }
+.center p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#github {
+  display: inline-flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#github svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  fill: #333;
+}
+
+#github:hover {
+  color: #007bff;
+}
+
+#github:hover svg {
+  fill: #007bff;
+}
