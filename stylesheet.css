@@ -162,3 +162,11 @@ input, textarea {
 /* div p {
 padding: 20px 10px;
 } */
+
+figure {
+  background-image: image(background-image);
+}
+figure[id="img-caption"] {
+  color:whitesmoke;
+  font-style:bold;
+}
