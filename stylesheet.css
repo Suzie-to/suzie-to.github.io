@@ -148,13 +148,17 @@ input[type="submit"] {
   margin: 1em auto 1em auto;
   height: 2em;
   font-size: 1.1rem;
-  background-color: burlywood;
-  border-color: white;
+  color: #fff;
+  background-color: #eab981;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor:cell;
 }
 input, textarea {
-  background-color:whitesmoke;
+  background-color: #f3e1c4;
   border: 1px solid burlywood;
-  color:whitesmoke;
+  color:#333;
   margin:10px 0 0 0;
   width:100%;
   min-height:2em;
@@ -166,7 +170,38 @@ padding: 20px 10px;
 figure {
   background-image: image(background-image);
 }
-figure[id="img-caption"] {
+#img-caption {
   color:whitesmoke;
   font-style:bold;
+  font-weight: bolder;
+}
+#toggle {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+.toggle-container {
+  margin-bottom: 20px;
+}
+
+/* .toggle-button {
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+} */
+
+.toggle-button h3 {
+  margin: 0;
+}
+
+.toggle-content {
+  display: none;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
