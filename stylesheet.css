@@ -24,6 +24,7 @@ h1 {
   height: auto;
   justify-content: center;
   display: block;
+  padding-top:15px;
 }
 
 #tribute-info {
@@ -154,17 +155,13 @@ input, textarea {
 padding: 20px 10px;
 } */
 
-/* #img-caption {
+#img-caption {
   color:whitesmoke;
   font-style:bold;
   font-weight: bolder;
-} */
-#toggle, #toggle1 {
-  width: 100%;
-  padding: 50px 0;
-  text-align: center;
-  background-color: rgb(25, 30, 32);
-  margin-top: 20px;
+}
+#img-caption:hover{
+  color:rgb(85, 117, 128);
 }
 .toggle-container {
   margin-bottom: 20px;
@@ -193,13 +190,6 @@ padding: 20px 10px;
   text-decoration: none;
   font-weight: bold;
 } */
-
-
-@media (prefers-reduced-motion: no-preference) {
-  * {
-    scroll-behavior: smooth;
-  }
-}
 
 @media (max-width: 768px) {
   #facts {
