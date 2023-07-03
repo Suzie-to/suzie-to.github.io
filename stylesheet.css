@@ -1,18 +1,13 @@
-@media (prefers-reduced-motion: no-preference) {
-  * {
-    scroll-behavior: smooth;
-  }
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-@media (max-width: 768px) {
-  #facts {
-    padding: 5px;
-  }
-}
-
-head, body {
+/* body {
   background-color:bisque;
-}
+  margin: 300px 500px;
+} */
 header {
   width: 100%;
   height: 50px;
@@ -25,6 +20,7 @@ header {
 
 h1 {
   text-align: center;
+  margin-left: 10px;
 }
 
 #image {
@@ -50,7 +46,7 @@ ul li {
 }
 
 nav ul {
-  padding: 40px;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -77,11 +73,11 @@ color:darkgrey;
 color:blanchedalmond;
 }  */
 
-.page-wrapper {
+/* .page-wrapper {
 width: 100%;
-max-width: 1024px;
+max-width: 900px;
 margin: 0 auto;
-}
+} */
 
 #tribute-link {
   display: block;
@@ -95,16 +91,19 @@ margin: 0 auto;
   color:darkgrey;
   justify-items: right;
 }
-* {
-  box-sizing: border-box;
-}
+
 
 body {
-  margin: 0;
+  margin: 0 20px;
   font-family: sans-serif;
   background: #f5f6f7;
+
 }
 
+figure {
+  background-image: url('img/albania.jpg');
+  background-repeat: no-repeat;
+}
 .gallery {
   display: flex;
   flex-direction: row;
@@ -167,15 +166,12 @@ input, textarea {
 padding: 20px 10px;
 } */
 
-figure {
-  background-image: image(background-image);
-}
-#img-caption {
+/* #img-caption {
   color:whitesmoke;
   font-style:bold;
   font-weight: bolder;
-}
-#toggle {
+} */
+#toggle, #toggle1 {
   width: 100%;
   padding: 50px 0;
   text-align: center;
@@ -205,11 +201,11 @@ figure {
   border-radius: 5px;
   margin-top: 10px;
 }
-.center p {
+/* .center p {
   line-height: 1.5;
   display: inline-block;
   vertical-align: middle;
-}
+} */
 
 #github {
   display: inline-flex;
@@ -232,4 +228,15 @@ figure {
 
 #github:hover svg {
   fill: #007bff;
+}
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (max-width: 768px) {
+  #facts {
+    padding: 5px;
+  }
 }
