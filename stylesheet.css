@@ -2,6 +2,7 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
@@ -83,16 +84,18 @@ color:blanchedalmond;
 body {
   margin: 0 20px;
   position:absolute;
-  font-family: sans-serif;
   background: rgb(226, 221, 242);
+  width:100%;
 
 }
 
 figure {
   background-image: url('img/albania.jpg');
-  /*background-repeat: no-repeat;*/
+  /* background-repeat: no-repeat; */
+  background-size: cover;
   width: 100%;
-  height: auto;
+  height: 60%;
+  margin: 0px;
 }
 
 .gallery {
@@ -192,8 +195,8 @@ padding: 20px 10px;
   font-weight: bold;
 } */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #facts {
     padding: 5px;
   }
-}
+} */
