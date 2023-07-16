@@ -146,9 +146,10 @@ input, textarea {
   max-width: 980px;
   margin-top: 4rem;
   flex-wrap: wrap;
+
 }
 
-#linkedin, #github, #trailhead {
+#linkedin, #github, #trailhead, #resume {
   font-weight: 500;
   font-size: 1.5rem;
 }
