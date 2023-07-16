@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,initial scale=1.0"/> 
+        <link href="stylesheet.css" rel = "stylesheet" type="text/css"/>
+        <title>Survay</title>
+    </head>
+    <body>
+      <h1 id="title">My First Survey</h1>
+      <p id="description">It will only take 2 minutes!</p>
+      <form id="survey-form">
+
+            <label id="name-label">
+                <input required id="name" type="text" placeholder="First Name, Last Name"/>
+            </label>
+
+            <label id="email-label">
+                <input required id="email" type="email" placeholder="Email"/>
+            </label>
+
+            <label id="number-label">
+                <input required id="number" type="number" min="1" max="101" placeholder="Age"/>
+            </label>
+            
+            <select id="dropdown">
+                <option>Choose one</option>
+                <option>Python</option>
+                <option>Javascript</option>
+                <option>C</option>
+                <option>C#</option>
+            </select>
+
+            <label for="novice">
+                <input id="novice" type="radio" name="experience" value="None"/>Novice
+            </label>
+
+            <label for="begginer">
+                <input id="begginer" type="radio" name="experience" value="Some"/>Begginer
+            </label>
+
+            <label for= "intermediate">
+                <input id="intermediate" type="radio" name="experience" value=" A bit"/>Intermediate
+            </label>
+
+            <label for="checkbox">
+                <input type="checkbox" name="medium1" value="YouTube"/>
+            </label>
+
+            <label for="checkbox">
+                <input type="checkbox" name="medium2" value="Books"/>
+            </label>
+            <label for="checkbox">
+                <input type="checkbox" name="medium3" value="StackOverflow"/>
+            </label>
+
+            <label>
+                <textarea id="comments" rows="3" cols="40" placeholder="Pleaser Leave a Comment"></textarea>
+            </label>
+
+            <label>
+                <button id="submit" type="submit">SUBMIT</button>
+            </label>
+      </form>
+    </body>
+
+  </html>
