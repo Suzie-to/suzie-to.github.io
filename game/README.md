@@ -1,54 +1,47 @@
+# Bootcamp Quest
 
-//TODO use markup to format
-Hangman reinterpreted
-This is the README file for the Hangman reinterpreted code. The code is an HTML file that includes JavaScript and CSS code to create a Hangman game with a graphical user interface.
+Bootcamp Quest is an interactive game inspired by the classic Hangman. This README file provides information about the code, which includes HTML, JavaScript, and CSS to create the game.
 
-Table of Contents
-Description
-Setup
-Game Instructions
-HTML Structure
-CSS Styles
-JavaScript Logic
-Description
-The Hangman reinterpreted code is a web-based version of the classic Hangman game. It allows players to guess a secret word by selecting letters from the alphabet. The game features a graphical representation of a house that progressively disintegrates as the player makes wrong guesses. The player has a limited number of tries to guess the word before the house fully disintegrates.
+## Table of Contents
+- [Description](#description)
+- [Setup](#setup)
+- [Game Instructions](#game-instructions)
+- [HTML Structure](#html-structure)
+- [CSS Styles](#css-styles)
+- [JavaScript Logic](#javascript-logic)
 
-Setup
-To run the Hangman reinterpreted game, follow these steps:
+## Description
+Bootcamp Quest is a web-based version of the classical Hangman game. In this game, players are challenged to guess a secret word related to programming topics such as HTML, CSS, or JavaScript. The game features a graphical representation of a bootcamp school building that progressively disintegrates as players make wrong guesses. Players have a limited number of tries to guess the word before the building completely falls appart.
 
-Copy the provided code into an HTML file.
-Save the HTML file with a .html extension.
-Make sure the HTML file and the required assets (such as images and stylesheets) are in the same directory.
-Open the HTML file in a web browser.
-Game Instructions
-When the game starts, you will see a prompt to select a category that corresponds to a specific programming topic (HTML, CSS, or JavaScript).
-Click on a category button to choose a category.
-Once a category is selected, the game will generate a secret word from that category.
-The secret word will be displayed as a series of underscores representing the hidden letters.
-Click on the letter buttons to make your guesses.
-If the guessed letter is correct, the corresponding underscore(s) in the secret word will be revealed.
-If the guessed letter is incorrect, the house will progressively disintegrate, and you will have a limited number of tries to guess the word before the game ends.
-Continue guessing letters until you either reveal the entire word or make too many incorrect guesses.
-If you reveal the entire word, you win the game.
-If you make too many incorrect guesses, you lose the game.
-After the game ends, you can start a new game by clicking the "New Game" button.
-HTML Structure
-The HTML code consists of the following main elements:
+## Setup
+To run Bootcamp Quest, follow these steps:
+1. Copy the provided code into an HTML file.
+2. Save the HTML file with a .html extension.
+3. Ensure that the HTML file and the required assets (images and stylesheets) are in the same directory.
+4. Open the HTML file in a web browser.
 
-<html>: The root element of the HTML document.
-<head>: Contains metadata and links to external resources.
-<body>: The main content of the page.
-<div class="drawing-container">: Container for the graphical representation of the house.
-<div class="container" id="quiz-aria">: Container for the game elements, including categories, letter buttons, and the new game popup.
-<button id="review-instructions-button">: Button to open the game instructions modal.
-<div id="manual-container">: Container for the game instructions modal.
-<script src="setup.js"></script>: JavaScript code for the game logic.
-CSS Styles
-The CSS code provides styling for the Hangman game elements. It includes styles for the house, roof, doors, windows, buttons, and other visual components. The styles define the appearance and positioning of the elements to create the graphical representation of the game.
+## Game Instructions
+1. When the game starts, players are prompted to select a category corresponding to a specific programming topic (HTML, CSS, or JavaScript).
+2. The player clicks on a category button to choose a category.
+3. Once a category is selected, the game generates a secret word from that category.
+4. The secret word is displayed as a series of underscores representing the hidden letters.
+5. the player guesses letters by clicking the letter buttons provided.
+6. If a guessed letter is correct, the corresponding underscore(s) in the secret word are revealed.
+7. If a guessed letter is incorrect, the house progressively disintegrates, and players have a limited number of tries to guess the word.
+8. The game continues until the entire word is revealed or too many incorrect guesses are made.
+9. Winning the game requires revealing the entire word.
+10. Losing the game occurs when too many incorrect guesses are made.
+11. After the game ends, players can start a new game by clicking the "New Game" button.
 
-JavaScript Logic
-The JavaScript code handles the game logic and interaction. It includes functions for displaying categories, generating a random word, encrypting the word with underscores, handling user guesses, updating the graphical representation of the house, checking for game win or loss conditions, and starting a new game. The code also includes event listeners for button clicks and functions for displaying game instructions and navigating through instruction slides.
+## HTML Structure
+The HTML code includes elements such as categories buttons, the secret word display, the letter buttons, and the graphical representation of the disintegrating house.
 
-Please note that the provided code is just a snippet, and additional code may be required to make the game fully functional.
+## CSS Styles
+The CSS code provides the visual styling for the game, including the appearance of buttons and the graphical elements of the disintegrating house.
 
-Enjoy playing Hangman reinterpreted!
+## JavaScript Logic
+The JavaScript code handles the game logic, including generating random words from selected categories, encrypting words with underscores, handling user guesses, updating the graphical representation of the house, and checking for win or loss conditions. The code also includes event listeners for button clicks and functions for starting a new game.
+
+Please note that the provided code is a far from perfect and additional code may be required for full functionality.
+
+Enjoy playing Bootcamp Quest, the web-based version of the classic Hangman game!
