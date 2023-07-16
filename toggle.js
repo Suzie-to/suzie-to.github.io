@@ -23,7 +23,7 @@ function myToggle() {
     }
   }
   function myToggle3() {
-    var toggle = document.getElementById("whyToggle");
+    var toggle = document.getElementById("motivationToggle");
     if (toggle.style.display === "none") {
       toggle.style.display = "block";
     } else {
@@ -31,7 +31,7 @@ function myToggle() {
     }
   }
   function myToggle4() {
-    var toggle = document.getElementById("kukeriToggle");
+    var toggle = document.getElementById("projectsToggle");
     if (toggle.style.display === "none") {
       toggle.style.display = "block";
     } else {
