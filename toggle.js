@@ -6,15 +6,6 @@ function myToggle() {
     toggle.style.display = "none";
   }
 }
-
-// function myToggle() {
-//     var toggle = document.getElementById("myToggle");
-//     if (toggle.style.display === "none") {
-//       toggle.style.display = "block";
-//     } else {
-//       toggle.style.display = "none";
-//     }
-//   }
   function myToggle1() {
     var toggle = document.getElementById("workToggle");
     if (toggle.style.display === "none") {
@@ -41,6 +32,14 @@ function myToggle() {
   }
   function myToggle4() {
     var toggle = document.getElementById("kukeriToggle");
+    if (toggle.style.display === "none") {
+      toggle.style.display = "block";
+    } else {
+      toggle.style.display = "none";
+    }
+  }
+  function myToggle5() {
+    var toggle = document.getElementById("contactToggle");
     if (toggle.style.display === "none") {
       toggle.style.display = "block";
     } else {
