@@ -136,6 +136,11 @@ input, textarea {
   border-radius: 5px;
   margin-top: 10px;
 }
+.subparagraph {
+  margin: 0 0 0 0;
+  padding: 1em 0 1em 0;
+}
+
 
 .contact-links {
   display: flex;

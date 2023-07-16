@@ -87,42 +87,34 @@ let displayWord = (categoryName) => {
 
     //convert the node list into an array to access the elements
     Array.from(categoryButtons).forEach(button => {
-        //console.log("categoryName");
-        //compare each element value(category) with the value(category) of the button innerText
         if(button.innerText.toLowerCase() === categoryName) {
-            //finally highlight the button and activate it
             button.classList.add('active');
         }
-        // disable all non-active buttons
         else {
             button.disabled = true;
         }        
     });
 
 //RESET
-    //reveal the letters that we hidden initially
     letterContainer.classList.remove('hide')
-    // set the initial user input to null
     userInput.innerText = "";
 
 
 //GENERATE A RANDOM WORD
     let categoryArray = categories[categoryName];
-    //genereate a random index : Math.random() * (max-min) + min incl min, excl max
     let randomIndex = Math.floor(Math.random() * categoryArray.length);
     secretWord = categoryArray[randomIndex];
     console.log(`SECRET WORD = ${secretWord}`);
 
 
 //ENCRYPTION - REPLACE EACH CHARACTER WITH AN UNDERSCORE
-    //let maskedWord = secretWord.split('').map(() => '<span class="dashes">_</span>').join('');
     let maskedWord = secretWord.replace(/./g, '<span class="dashes">_</span>');
     
-    //DISPLAY THE UNDERCORE WORD
+//DISPLAY THE UNDERCORE WORD
     userInput.innerHTML = maskedWord;
 }
 
-//DRIVER
+/**********************************************************************************/
 
 const startGame = () => {
 //RESET FIELD
@@ -147,8 +139,8 @@ const startGame = () => {
             let secretWordArray = secretWord.split("");
             let dashes = document.getElementsByClassName("dashes");
             
-            console.log(button.innerText);
-            console.log(secretWordArray);
+            // console.log(button.innerText);
+            // console.log(secretWordArray);
 
         // place the correctly guesses letter at corresponding position(s)
         if(secretWordArray.includes(button.innerText)) {
@@ -161,7 +153,6 @@ const startGame = () => {
                     if(correctGuesses==secretWordArray.length) {
                         doorLeft.style.transform = 'rotateY(-140deg)';
                         doorRight.style.transform = 'rotateY(140deg)';
-
                         endGameText.innerHTML = `<h2 class="won-message">YOU'VE WON!!!</h2>
                                                 <p>The word was <span>${secretWord}</span></p>`;
                        
@@ -233,17 +224,12 @@ const removeHouseElements = (lossesCount) => {
 
 // INSTRUCTIONS
 function showSlide(index) {
-    // Hide all slides
     slides.forEach((slide) => {
       slide.style.display = 'none';
     });
-  
-    // Show the slide at the specified index
     slides[index].style.display = 'block';
   }
   
-  
-  // Function to go to the previous slide
   function goToPrevSlide() {
     currentSlideIndex--;
     if (currentSlideIndex < 0) {
@@ -252,11 +238,9 @@ function showSlide(index) {
     showSlide(currentSlideIndex);
   }
   
-  // Function to go to the next slide
   function goToNextSlide() {
     currentSlideIndex++;
     if (currentSlideIndex >= slides.length) {
-      //exit
       currentSlideIndex = 0;
     }
     showSlide(currentSlideIndex);
@@ -265,13 +249,11 @@ function showSlide(index) {
       manualContainer.style.display = 'block';
   } );
   
-  // Function to review the instructions
   function reviewInstructions() {
       currentSlideIndex = 0;
       showSlide(currentSlideIndex);
     }
   
-  // Add event listeners to the buttons
   prevButton.addEventListener('click', goToPrevSlide);
   nextButton.addEventListener('click', goToNextSlide);
   reviewInstructionsButton.addEventListener('click', reviewInstructions);
