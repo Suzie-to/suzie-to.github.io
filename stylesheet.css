@@ -13,6 +13,11 @@ header {
   align-items: center;
   position: fixed;
   top: 0;
+  z-index:300;
+}
+
+main {
+  margin-top: 70px
 }
 
 nav ul {
@@ -37,7 +42,6 @@ h1 {
   float: right;
   justify-content: center;
   display: block;
-  padding-top:51px;
   transform: scaleX(-1);
   }
 
