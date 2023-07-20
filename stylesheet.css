@@ -152,17 +152,11 @@ input, textarea {
 
 }
 
-/* #linkedin, #github, #trailhead, #resume, #free-code-camp{
-  font-weight: 500;
-  font-size: 1.5rem;
-} */
 .contact-links a {
   font-weight: 500;
   font-size: 1.5rem;
 }
 
-#linkedin:hover, #github:hover, #trailhead:hover, #resume:hover {
+.contact-links a:hover{
   font-weight: bolder;
-
-}
-
+} 
