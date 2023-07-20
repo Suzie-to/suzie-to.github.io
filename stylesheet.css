@@ -46,7 +46,7 @@ h1 {
   }
 
 a {
-  padding:20px;
+  padding: 9px;
   padding-left: 40px;
   color:rgb(5, 32, 39);
   font-size: 16px;
@@ -152,10 +152,15 @@ input, textarea {
 
 }
 
-#linkedin, #github, #trailhead, #resume {
+/* #linkedin, #github, #trailhead, #resume, #free-code-camp{
+  font-weight: 500;
+  font-size: 1.5rem;
+} */
+.contact-links a {
   font-weight: 500;
   font-size: 1.5rem;
 }
+
 #linkedin:hover, #github:hover, #trailhead:hover, #resume:hover {
   font-weight: bolder;
 
