@@ -6,7 +6,6 @@ const letterContainer = document.getElementById("letter-container");
 const userInput = document.getElementById("user-input");
 const newGameContainer = document.getElementById("new-game-container");
 const newGameButton = document.getElementById("new-game-button");
-const canvas = document.getElementById("canvas");
 const endGameText = document.getElementById("end-game-text")
 
 
@@ -81,7 +80,7 @@ const disableButtons = () => {
 };
 
 // SELECT A CATEGORY
-//return a random word from the catgeory array display it encrypted
+//return a random word from the catgeory array and display it encrypted
 let displayWord = (categoryName) => {
     let categoryButtons = document.querySelectorAll(".categories");
 
@@ -142,7 +141,7 @@ const startGame = () => {
             // console.log(button.innerText);
             // console.log(secretWordArray);
 
-        // place the correctly guesses letter at corresponding position(s)
+        // place the correctly guessed letter at corresponding position(s)
         if(secretWordArray.includes(button.innerText)) {
             secretWordArray.forEach((char, index) => {
                 if(char === button.innerText) {
@@ -162,7 +161,7 @@ const startGame = () => {
             });
 
         } else {
-            //wrongGuesses used to diintegrate the bootcamp school
+            //wrongGuesses used to disintegrate the bootcamp school
             wrongGuesses++;
             console.log(`WRONG GUESSES: ${wrongGuesses}`)
 
